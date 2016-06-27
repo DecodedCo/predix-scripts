@@ -53,7 +53,7 @@ ASSET_DESCRIPTION="device1"
 
 # GITHUB repo to pull predix-nodejs-starter
 # Use this one for the non-internal GE repo = https://github.build.ge.com/adoption/predix-nodejs-starter
-GIT_PREDIX_NODEJS_STARTER_URL="git@github.build.ge.com:adoption/predix-nodejs-starter.git"
+GIT_PREDIX_NODEJS_STARTER_URL="https://github.com/PredixDev/predix-nodejs-starter.git"
 
 # Name for the temp_app application
 TEMP_APP="simple-app"
@@ -96,6 +96,4 @@ ENABLE_MODBUS_SIMULATOR="true"
 
 #Device Specific Connection info
 DEVICE_SPECIFIC_GITHUB_REPO_NAME="predix-machine-template-adapter-edison"
-MACHINE_TEMPLATES_GITHUB_REPO_URL="https://github.build.ge.com/adoption/predix-machine-templates.git"
-
-
+MACHINE_TEMPLATES_GITHUB_REPO_URL="https://github.com/PredixDev/predix-machine-templates.git"
