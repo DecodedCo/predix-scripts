@@ -116,7 +116,7 @@ then
 	rm -rf $machineTemplatesRepoName
 fi
 
-if [ "$(uname -s)" == "Darwin" -o "$(expr substr $(uname -s) 1 5)" == "Linux" ]
+if [ "$(uname -s)" == "Darwin" ] || [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]
 then
 	__append_new_line_log "Zipping up the configured Predix Machine..." "$predixMachineLogDir"
 	rm -rf PredixMachineContainer.zip
