@@ -37,7 +37,7 @@ __append_new_line_log "*** BUILDING AND DEPLOYING FRONT END APPLICATION! ***" "$
 
 # Get the UAA enviorment variables (VCAPS)
 
-if trustedIssuerID=$(cf env $1 | grep predix-uaa* | grep issuerId*| awk 'BEGIN {FS=":"}{print "https:"$3}' | awk 'BEGIN {FS="\","}{print $1}' ); then
+if trustedIssuerID=$(cf env $1 | grep predix-uaa | grep issuerId*| awk 'BEGIN {FS=":"}{print "https:"$3}' | awk 'BEGIN {FS="\","}{print $1}' ); then
   if [[ "$trustedIssuerID" == "" ]] ; then
     __error_exit "The UAA trustedIssuerID was not found for \"$1\"..." "$buildBasicAppLogDir"
   fi
@@ -46,7 +46,7 @@ else
 	__error_exit "There was an error getting the UAA trustedIssuerID..." "$buildBasicAppLogDir"
 fi
 
-if uaaURL=$(cf env $1 | grep predix-uaa* | grep uri*| awk 'BEGIN {FS=":"}{print "https:"$3}' | awk 'BEGIN {FS="\","}{print $1}' ); then
+if uaaURL=$(cf env $1 | grep predix-uaa* | grep uri| awk 'BEGIN {FS=":"}{print "https:"$3}' | awk 'BEGIN {FS="\","}{print $1}' ); then
   if [[ "$uaaURL" == "" ]] ; then
     __error_exit "The UAA URL was not found for \"$1\"..." "$buildBasicAppLogDir"
   fi
@@ -91,7 +91,7 @@ else
 	__error_exit "There was an error getting ASSET_ZONE_ID..." "$buildBasicAppLogDir"
 fi
 
-if assetURI=$(cf env $1 | grep uri*| grep asset* | awk 'BEGIN {FS=":"}{print "https:"$3}' | awk 'BEGIN {FS="\","}{print $1}'); then
+if assetURI=$(cf env $1 | grep uri| grep asset | awk 'BEGIN {FS=":"}{print "https:"$3}' | awk 'BEGIN {FS="\","}{print $1}'); then
   if [[ "$assetURI" == "" ]] ; then
     __error_exit "The Asset URI was not found for \"$1\"..." "$buildBasicAppLogDir"
   fi
