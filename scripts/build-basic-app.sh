@@ -156,8 +156,8 @@ __find_and_replace ".*clientId\":.*" "    \"clientId\": \"$UAA_CLIENTID_GENERIC\
 __find_and_replace ".*base64ClientCredential\":.*" "    \"base64ClientCredential\": \"$MYGENERICS_SECRET\"," "config.json" "$buildBasicAppLogDir"
 
 # Add the required Timeseries and Asset URIs
-__find_and_replace ".*\"windServiceUrl\":.*" "    timeseriesURL: $TIMESERIES_QUERY_URI," "config.json" "$buildBasicAppLogDir"
-__find_and_replace ".*\"windServiceUrl\":.*" "    assetURL: $assetURI/$ASSET_TYPE_NOSPACE," "config.json" "$buildBasicAppLogDir"
+#__find_and_replace ".*\"windServiceUrl\":.*" "    timeseriesURL: $TIMESERIES_QUERY_URI," "config.json" "$buildBasicAppLogDir"
+#__find_and_replace ".*\"windServiceUrl\":.*" "    assetURL: $assetURI/$ASSET_TYPE_NOSPACE," "config.json" "$buildBasicAppLogDir"
 __find_and_replace "    timeseriesURL: $TIMESERIES_QUERY_URI," "    \"timeseriesURL\": \"$TIMESERIES_QUERY_URI\"," "config.json" "$buildBasicAppLogDir"
 __find_and_replace "    assetURL: $assetURI/$ASSET_TYPE_NOSPACE," "    \"assetURL\": \"$assetURI/$ASSET_TYPE_NOSPACE\"," "config.json" "$buildBasicAppLogDir"
 
