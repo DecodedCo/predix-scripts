@@ -19,7 +19,7 @@ trap "trap_ctrlc" 2
 
 PROGNAME=$(basename $0)
 GIT_FRONT_END_FILENAME="$buildBasicAppRootDir/../predix-nodejs-starter"
-GIT_BRANCH_RASPBERRY_PI="master"
+GIT_BRANCH_RASPBERRY_PI="TransformWorkshop"
 BUILD_APP_TEXTFILE="$buildBasicAppLogDir/build-basic-app-summary.txt"
 
 if ! [ -d "$buildBasicAppLogDir" ]; then
