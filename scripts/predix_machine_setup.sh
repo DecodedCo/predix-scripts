@@ -130,9 +130,9 @@ then
 	#rm -rf PredixMachine
 	TARGETDEVICEIP=""
 	TARGETDEVICEUSER=""
-	echo "Enter the ipaddress of your device followed by ENTER"
+	echo "Enter the ip address of your device followed by ENTER"
 	read TARGETDEVICEIP
-	echo "Enter the user name of your device followed by ENTER"
+	echo "Enter the username of your device followed by ENTER"
 	read TARGETDEVICEUSER
 	echo "scp PredixMachineContainer.zip $TARGETDEVICEUSER@$TARGETDEVICEIP:PredixMachineContainer.zip"
 	scp PredixMachineContainer.zip $TARGETDEVICEUSER@$TARGETDEVICEIP:PredixMachineContainer.zip
