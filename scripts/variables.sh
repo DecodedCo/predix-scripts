@@ -52,7 +52,6 @@ ASSET_DESCRIPTION="device1"
 ###############################
 
 # GITHUB repo to pull predix-nodejs-starter
-# Use this one for the non-internal GE repo = https://github.build.ge.com/adoption/predix-nodejs-starter
 GIT_PREDIX_NODEJS_STARTER_URL="https://github.com/PredixDev/predix-nodejs-starter.git"
 
 # Name for the temp_app application
