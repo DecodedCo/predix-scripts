@@ -18,7 +18,7 @@ source "$buildBasicAppRootDir/files_helper_funcs.sh"
 trap "trap_ctrlc" 2
 
 PROGNAME=$(basename $0)
-GIT_FRONT_END_FILENAME="$buildBasicAppRootDir/../predix-nodejs-starter"
+GIT_FRONT_END_FILENAME="predix-nodejs-starter"
 GIT_BRANCH_RASPBERRY_PI="TransformWorkshop"
 BUILD_APP_TEXTFILE="$buildBasicAppLogDir/build-basic-app-summary.txt"
 
