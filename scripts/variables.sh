@@ -94,5 +94,5 @@ ASSET_INSTANCE_NAME="$GLOBAL_APPENDER-asset-service"
 ENABLE_MODBUS_SIMULATOR="true"
 
 #Device Specific Connection info
-DEVICE_SPECIFIC_GITHUB_REPO_NAME="predix-machine-template-adapter-pi"
+DEVICE_SPECIFIC_GITHUB_REPO_NAME="predix-machine-template-adapter-pi-thursday"
 MACHINE_TEMPLATES_GITHUB_REPO_URL="https://github.com/GEXLP/predix-machine-templates-thursday.git"
