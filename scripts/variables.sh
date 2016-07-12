@@ -95,4 +95,4 @@ ENABLE_MODBUS_SIMULATOR="true"
 
 #Device Specific Connection info
 DEVICE_SPECIFIC_GITHUB_REPO_NAME="predix-machine-template-adapter-pi"
-MACHINE_TEMPLATES_GITHUB_REPO_URL="https://github.com/GEXLP/predix-machine-templates.git"
+MACHINE_TEMPLATES_GITHUB_REPO_URL="https://github.com/GEXLP/predix-machine-templates-thursday.git"

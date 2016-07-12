@@ -135,7 +135,7 @@ if [[ $run_cleanup -eq 1 ]]; then
 fi
 
 # Instantiate, configure, and push the following Predix services: Timeseries, Asset, and UAA.
-if [ $run_services -eq 1 ]; then	
+if [ $run_services -eq 1 ]; then
 	./scripts/predix_services_setup.sh "$TEMP_APP"
 fi
 
@@ -170,5 +170,4 @@ fi
 #		fi
 #	fi
 #fi
-echo "adsfadsfadsf"
 cat $PREDIX_SERVICES_TEXTFILE
